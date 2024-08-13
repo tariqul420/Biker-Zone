@@ -19,3 +19,13 @@
 .nav{
     backdrop-filter: blur(15px);
 }
+
+@media (prefers-color-scheme: dark) {
+    .liner{
+        background: linear-gradient(225deg, hsla(222, 47%, 11%, 1) 0%, hsla(209, 56%, 19%, 1) 42%, hsla(209, 56%, 19%, 1) 55%, hsla(209, 56%, 19%, 1) 64%, hsla(222, 47%, 11%, 1) 82%);
+    }
+
+    .dark-border{
+        border: 1px solid #1e5283;
+    }
+}

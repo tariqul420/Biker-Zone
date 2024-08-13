@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="en">
+<html class="scroll-smooth liner" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,10 +18,10 @@
     <link rel="stylesheet" href="src/output.css" />
     <link rel="stylesheet" href="src/style.css">
   </head>
-  <body class="max-w-[90rem] m-auto box-border scroll-smooth">
+  <body class="max-w-[90rem] m-auto box-border scroll-smooth max-sm:w-full">
 
     <!-- ! nav bar start hear -->
-    <nav class="flex items-center justify-evenly w-full m-auto sticky top-0 z-[1000] backdrop:blur-[20px] nav py-4">
+    <nav class="flex items-center justify-evenly w-full m-auto sticky top-0 z-[1000] backdrop:blur-[20px] nav py-4 max-sm:hidden">
       <div class="flex gap-9">
         <a class="nav" href="#">Home</a>
         <a class="nav" href="#shop">Shop</a>
@@ -34,18 +34,19 @@
         <button class="btn">Login</button>
       </div>
     </nav>
+    <p class="sm:hidden text-4xl text-white text-right pr-8 pt-8" id="menuIcon"><i class="fa-solid fa-bars"></i></p>
 
     <!-- ! header section start hear -->
-    <header class="bg-[#264653] h-[43.625rem]">
-        <section class="flex w-[80%] m-auto gap-24 py-40 items-center mt-[-6rem]">
+    <header class="bg-[#264653] h-[43.625rem] max-sm:h-full">
+        <section class="flex w-[80%] m-auto gap-24 py-40 items-center mt-[-6rem] max-sm:flex-col">
           <div class="space-y-2">
             <p class="text-white text-xs">Computer-controlled digital transistorized with electronic advance</p>
             <h1 class="heading-main">Honda CBR 300R</h1>
             <p class="paragraph !my-4">Amet minim mollit non deserunt ullamco est sit aliqua <br> dolor do amet sint. Velit officia consequat duis enim <br>  velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
             <button class="btn">Purchase</button>
           </div>
-          <div class="!w-[34.5rem]">
-            <img src="images/others/Honda.png" alt="" class="w-full]">
+          <div class="w-[34.5rem] max-sm:w-full">
+            <img src="images/others/Honda.png" alt="" class="w-full max-sm:w-5/6">
           </div>
         </section>
     </header>
@@ -53,9 +54,9 @@
     <main>
       <!-- ! Fetured Bikes In This Year section start hear -->
       <section class="my-11" id="shop">
-        <h2 class="heading-main text-black text-center">Fetured Bikes In This Year</h2>
+        <h2 class="heading-main text-black text-center dark:text-white">Fetured Bikes In This Year</h2>
         <p class="paragraph text-[#E76F1F] text-center">Best bike collection</p>
-        <div class="flex w-4/5 m-auto items-center justify-between bike mt-[7.5rem]">
+        <div class="flex w-4/5 m-auto items-center justify-between bike mt-[7.5rem] max-sm:flex-col">
           <img src="images/slider/bike1.png" alt="bike-01" class="w-[18rem]">
           <img src="images/slider/bike3.png" alt="bike-02" class="w-[18rem]">
           <img src="images/slider/bike4.png" alt="bike-03" class="w-[18rem]">
@@ -64,27 +65,27 @@
 
       <!-- ! Latest News section start hear -->
       <section class="mt-[10.313rem]"id="news">
-        <h2 class="heading-main text-black text-center">Latest News</h2>
-        <div class="flex gap-5 justify-between w-4/5 m-auto my-12">
+        <h2 class="heading-main text-black text-center dark:text-white">Latest News</h2>
+        <div class="flex gap-5 justify-between w-4/5 m-auto my-12 max-sm:flex-col">
 
-          <div class="h-[579px] w-[377px] p-5 shadow-[0_0_4px_0_rgba(0,0,0,0.15)] justify-between flex flex-col items-start rounded-lg">
+          <div class="h-[579px] w-[377px] p-5 shadow-[0_0_4px_0_rgba(0,0,0,0.15)] justify-between flex flex-col items-start rounded-lg max-sm:w-full dark-border">
             <img src="images/others/latest1.png" alt="">
-            <h3 class="heading-main text-black text-3xl">Ducati XDIAVEL S-73</h3>
-            <p class="paragraph text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+            <h3 class="heading-main text-black text-3xl dark:text-white">Ducati XDIAVEL S-73</h3>
+            <p class="paragraph text-black dark:text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
             <button class="btn font-medium">Read More</button>
           </div>
 
-          <div class="h-[579px] w-[377px] p-5 shadow-[0_0_4px_0_rgba(0,0,0,0.15)] justify-between flex flex-col items-start rounded-lg">
+          <div class="h-[579px] w-[377px] p-5 shadow-[0_0_4px_0_rgba(0,0,0,0.15)] justify-between flex flex-col items-start rounded-lg max-sm:w-full dark-border">
             <img src="images/others/latest2.png" alt="">
-            <h3 class="heading-main text-black text-[1.6rem]">Motorcycles & Scooters</h3>
-            <p class="paragraph text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+            <h3 class="heading-main text-black text-[1.6rem] dark:text-white">Motorcycles & Scooters</h3>
+            <p class="paragraph text-black dark:text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
             <button class="btn font-medium text-[#E76F1F] button hover:text-white hover:bg-[#E76F1F]">Read More</button>
           </div>
 
-          <div class="h-[579px] w-[377px] p-5 shadow-[0_0_4px_0_rgba(0,0,0,0.15)] justify-between flex flex-col items-start rounded-lg">
+          <div class="h-[579px] w-[377px] p-5 shadow-[0_0_4px_0_rgba(0,0,0,0.15)] justify-between flex flex-col items-start rounded-lg max-sm:w-full dark-border">
             <img src="images/others/latest3.png" alt="">
-            <h3 class="heading-main text-black text-[1.6rem]">2021 Honda CBR500R</h3>
-            <p class="paragraph text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+            <h3 class="heading-main text-black text-[1.6rem] dark:text-white">2021 Honda CBR500R</h3>
+            <p class="paragraph text-black dark:text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
             <button class="btn font-medium text-[#E76F1F] button hover:text-white hover:bg-[#E76F1F]">Read More</button>
           </div>
           
@@ -93,37 +94,37 @@
 
       <!-- ! Happy Clients says section start hear -->
       <section class="mt-[10.313rem]" id="client">
-        <h2 class="heading-main text-black text-center">Happy <span class="text-[#E76F1F]">Clients says</span></h2>
-        <div class="flex gap-5 justify-between w-4/5 m-auto my-12">
+        <h2 class="heading-main text-black text-center dark:text-white">Happy <span class="text-[#E76F1F]">Clients says</span></h2>
+        <div class="flex gap-5 justify-between w-4/5 m-auto my-12 max-sm:flex-col">
 
-          <div class="h-[478px] w-[322px] p-[40px_35px_40px_35px] shadow-[0_0_4px_0_rgba(0,0,0,0.15)] justify-between flex flex-col items-center rounded-lg">
+          <div class="h-[478px] w-[322px] p-[40px_35px_40px_35px] shadow-[0_0_4px_0_rgba(0,0,0,0.15)] justify-between flex flex-col items-center rounded-lg max-sm:w-full dark-border">
             <img src="images/others/user-1.png" alt="" class="w-36  h-36">
-            <p class="paragraph text-black text-center">Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+            <p class="paragraph text-black text-center dark:text-white">Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
             <p>
               <i class="fa-solid fa-star" style="color: #e76f1f;"></i><i class="fa-solid fa-star" style="color: #e76f1f;"></i><i class="fa-solid fa-star" style="color: #e76f1f;"></i><i class="fa-solid fa-star" style="color: #e76f1f;"></i><i class="fa-regular fa-star" style="color: #e76f1f;"></i>
             </p>
             <p class="text-[#23A6F0]">Regina Miles</p>
-            <p class="text-[#252B42]">Banker</p>
+            <p class="text-[#252B42] dark:text-white">Banker</p>
           </div>
 
-          <div class="h-[478px] w-[322px] p-[40px_35px_40px_35px] shadow-[0_0_4px_0_rgba(0,0,0,0.15)] justify-between flex flex-col items-center rounded-lg">
+          <div class="h-[478px] w-[322px] p-[40px_35px_40px_35px] shadow-[0_0_4px_0_rgba(0,0,0,0.15)] justify-between flex flex-col items-center rounded-lg max-sm:w-full dark-border">
             <img src="images/others/user-2.png" alt="" class="w-36  h-36">
-            <p class="paragraph text-black text-center">Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+            <p class="paragraph text-black text-center dark:text-white">Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
             <p>
               <i class="fa-solid fa-star" style="color: #e76f1f;"></i><i class="fa-solid fa-star" style="color: #e76f1f;"></i><i class="fa-solid fa-star" style="color: #e76f1f;"></i><i class="fa-solid fa-star" style="color: #e76f1f;"></i><i class="fa-regular fa-star" style="color: #e76f1f;"></i>
             </p>
             <p class="text-[#23A6F0]">Regina Miles</p>
-            <p class="text-[#252B42]">Banker</p>
+            <p class="text-[#252B42] dark:text-white">Banker</p>
           </div>
 
-          <div class="h-[478px] w-[322px] p-[40px_35px_40px_35px] shadow-[0_0_4px_0_rgba(0,0,0,0.15)] justify-between flex flex-col items-center rounded-lg">
+          <div class="h-[478px] w-[322px] p-[40px_35px_40px_35px] shadow-[0_0_4px_0_rgba(0,0,0,0.15)] justify-between flex flex-col items-center rounded-lg max-sm:w-full dark-border">
             <img src="images/others/user-3.png" alt="" class="w-36  h-36">
-            <p class="paragraph text-black text-center">Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+            <p class="paragraph text-black text-center dark:text-white">Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
             <p>
               <i class="fa-solid fa-star" style="color: #e76f1f;"></i><i class="fa-solid fa-star" style="color: #e76f1f;"></i><i class="fa-solid fa-star" style="color: #e76f1f;"></i><i class="fa-solid fa-star" style="color: #e76f1f;"></i><i class="fa-regular fa-star" style="color: #e76f1f;"></i>
             </p>
             <p class="text-[#23A6F0]">Regina Miles</p>
-            <p class="text-[#252B42]">Banker</p>
+            <p class="text-[#252B42] dark:text-white">Banker</p>
           </div>
 
         </div>
@@ -131,37 +132,37 @@
 
       <!-- ! Frequently Asked Questions section start hear -->
       <section class="mt-[6.875rem] mb-[8.688rem]" id="question">
-        <h2 class="heading-main text-black text-center">Frequently Asked<span class="text-[#E76F1F]"> Questions</span></h2>
+        <h2 class="heading-main text-black text-center dark:text-white">Frequently Asked<span class="text-[#E76F1F]"> Questions</span></h2>
 
-        <div class="w-4/5 m-auto mt-12 flex items-center justify-between">
+        <div class="w-4/5 m-auto mt-12 flex items-center justify-between max-sm:flex-col">
           <div class="">
             <img src="images/others/faq.png" alt="">
           </div>
-          <div class="flex flex-col gap-4">
-            <div class="w-[552px] h-[203px] p-[20px_24px_20px_24px] border-solid border-2 border-[#D5E5FB] rounded-lg relative">
-              <h3 class="mb-2 heading-question">What are the most important things I should know about riding a bike?</h3>
-              <p class="text-[#7E848C] text-base">Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </p>
+          <div class="flex flex-col gap-4 max-sm:mt-8">
+            <div class="w-[552px] h-[203px] p-[20px_24px_20px_24px] border-solid border-2 border-[#D5E5FB] rounded-lg relative max-sm:w-full max-sm:h-full">
+              <h3 class="mb-2 heading-question dark:text-white">What are the most important things I should know about riding a bike?</h3>
+              <p class="text-[#7E848C] text-base dark:text-gray-200">Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </p>
               <div class="absolute top-6 right-6">
                 <i class="fa-solid fa-angle-up"></i>
               </div>
             </div>
 
-            <div class="w-[552px] p-[20px_24px_20px_24px] border-solid border-2 border-[#D5E5FB] rounded-lg relative">
-              <h3 class="mb-2 heading-question">What are the most important things I should know about riding a bike?</h3>
+            <div class="w-[552px] p-[20px_24px_20px_24px] border-solid border-2 border-[#D5E5FB] rounded-lg relative max-sm:w-full">
+              <h3 class="mb-2 heading-question dark:text-white">What are the most important things I should know about riding a bike?</h3>
               <div class="absolute top-6 right-6">
                 <i class="fa-solid fa-angle-up"></i>
               </div>
             </div>
 
-            <div class="w-[552px] p-[20px_24px_20px_24px] border-solid border-2 border-[#D5E5FB] rounded-lg relative">
-              <h3 class="mb-2 heading-question">What are the most important things I should know about riding a bike?</h3>
+            <div class="w-[552px] p-[20px_24px_20px_24px] border-solid border-2 border-[#D5E5FB] rounded-lg relative max-sm:w-full">
+              <h3 class="mb-2 heading-question dark:text-white">What are the most important things I should know about riding a bike?</h3>
               <div class="absolute top-6 right-6">
                 <i class="fa-solid fa-angle-up"></i>
               </div>
             </div>
 
-            <div class="w-[552px] p-[20px_24px_20px_24px] border-solid border-2 border-[#D5E5FB] rounded-lg relative">
-              <h3 class="mb-2 heading-question">What are the most important things I should know about riding a bike?</h3>
+            <div class="w-[552px] p-[20px_24px_20px_24px] border-solid border-2 border-[#D5E5FB] rounded-lg relative max-sm:w-full">
+              <h3 class="mb-2 heading-question dark:text-white">What are the most important things I should know about riding a bike?</h3>
               <div class="absolute top-6 right-6">
                 <i class="fa-solid fa-angle-up"></i>
               </div>
@@ -173,13 +174,13 @@
     </main>
 
     <!-- ! footer section start hear -->
-    <footer class="flex justify-around h-[17.5rem] bg-[#0B0D17] items-center" id="Contact">
+    <footer class="flex justify-around h-[17.5rem] bg-[#0B0D17] items-center max-sm:flex-col max-sm:h-auto max-sm:pb-8 max-sm:pt-8" id="Contact">
       <div class="space-y-3">
         <div class="flex gap-6">
           <p class="text-white text-base"><a href="https://play.google.com/store/apps/details?id=com.hondaeu.africatwin&pcampaignid=web_share" target="_blank">Download Now</a></p>
           <p class="text-white text-base"><a href="#">License</a></p>
         </div>
-        <div class="flex gap-6">
+        <div class="flex gap-6 max-sm:flex-col">
           <p class="text-white text-base"><a href="#">About</a></p>
           <p class="text-white text-base"><a href="#">Features</a></p>
           <p class="text-white text-base"><a href="#">Pricing</a></p>
@@ -192,11 +193,12 @@
         </div>
       </div>
 
-      <div class="space-y-2">
-        <p class="text-white text-[1.125rem] font-medium">Get the App</p>
+      <div class="space-y-2 max-sm:mt-8">
+        <p class="text-white text-[1.125rem] font-medium max-sm:text-center">Get the App</p>
         <p><a href="https://apps.apple.com/us/app/honda-motorcycles-europe/id1076347617" target="_blank"><img src="images/others/ios.png" alt=""></a></p>
         <p><a href="https://play.google.com/store/apps/details?id=com.hondaeu.africatwin&pcampaignid=web_share" target="_blank"><img src="images/others/android.png" alt=""></a></p>
       </div>
     </footer>
+
   </body>
 </html>

@@ -660,6 +660,10 @@ html {
   margin-bottom: 0.5rem;
 }
 
+.mb-\[8\.688rem\] {
+  margin-bottom: 8.688rem;
+}
+
 .mt-12 {
   margin-top: 3rem;
 }
@@ -678,18 +682,6 @@ html {
 
 .mt-\[7\.5rem\] {
   margin-top: 7.5rem;
-}
-
-.mb-\[\] {
-  margin-bottom: ;
-}
-
-.mb-\[8\.688\] {
-  margin-bottom: 8.688;
-}
-
-.mb-\[8\.688rem\] {
-  margin-bottom: 8.688rem;
 }
 
 .box-border {
@@ -724,10 +716,6 @@ html {
   height: 579px;
 }
 
-.\!w-\[34\.5rem\] {
-  width: 34.5rem !important;
-}
-
 .w-36 {
   width: 9rem;
 }
@@ -742,6 +730,10 @@ html {
 
 .w-\[322px\] {
   width: 322px;
+}
+
+.w-\[34\.5rem\] {
+  width: 34.5rem;
 }
 
 .w-\[377px\] {
@@ -873,13 +865,30 @@ html {
   padding-bottom: 10rem;
 }
 
+.pr-8 {
+  padding-right: 2rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-\[0\.875rem\] {
@@ -959,8 +968,82 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@media not all and (min-width: 640px) {
+  .max-sm\:mt-8 {
+    margin-top: 2rem;
+  }
+
+  .max-sm\:hidden {
+    display: none;
+  }
+
+  .max-sm\:h-auto {
+    height: auto;
+  }
+
+  .max-sm\:h-full {
+    height: 100%;
+  }
+
+  .max-sm\:w-5\/6 {
+    width: 83.333333%;
+  }
+
+  .max-sm\:w-full {
+    width: 100%;
+  }
+
+  .max-sm\:flex-col {
+    flex-direction: column;
+  }
+
+  .max-sm\:pb-8 {
+    padding-bottom: 2rem;
+  }
+
+  .max-sm\:pt-8 {
+    padding-top: 2rem;
+  }
+
+  .max-sm\:text-center {
+    text-align: center;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:hidden {
     display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark\:bg-\[\#173450\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(23 52 80 / var(--tw-bg-opacity));
+  }
+
+  .dark\:bg-\[\#liner\] {
+    background-color: #liner;
+  }
+
+  .dark\:bg-\[liner\] {
+    background-color: liner;
+  }
+
+  .dark\:text-gray-200 {
+    --tw-text-opacity: 1;
+    color: rgb(229 231 235 / var(--tw-text-opacity));
+  }
+
+  .dark\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .dark\:dark\:text-white {
+      --tw-text-opacity: 1;
+      color: rgb(255 255 255 / var(--tw-text-opacity));
+    }
   }
 }
