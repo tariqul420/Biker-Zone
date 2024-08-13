@@ -1,0 +1,21 @@
+::-webkit-scrollbar {
+    height: .1rem;
+    width: .5rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(200, 200, 218);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #139fd6;
+    border-radius: 5rem;
+}
+.button{
+    border: 1px solid #E76F1F;
+    background: none;
+    transition: all 0.5s ease;
+}
+.nav{
+    backdrop-filter: blur(15px);
+}

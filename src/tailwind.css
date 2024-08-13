@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: "Poppins", sans-serif;
+    }
+}
+
+@layer components {
+    .btn {
+        @apply bg-[#E76F1F] rounded-md border-none py-3 px-5 text-white font-extrabold text-base text-center cursor-pointer tracking-[2px];
+    }
+
+    .nav {
+        @apply text-gray-400 text-base font-medium ;
+    }
+    .heading-main{
+        @apply text-white text-5xl font-semibold;
+    }
+    .paragraph{
+        @apply text-white text-base leading-[24px];
+    }
+    .heading-question{
+        @apply text-[#383838] font-medium text-xl;
+    }
+}
