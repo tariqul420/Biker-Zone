@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+    height: .1rem;
+    width: .5rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(200, 200, 218);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #139fd6;
+    border-radius: 5rem;
+}
+
+/* #theme-switch svg:last-child{
+    display: none;
+} */
+
 @layer base {
     html {
         font-family: "Poppins", sans-serif;
@@ -14,15 +32,26 @@
     }
 
     .nav {
-        @apply text-gray-400 text-base font-medium ;
+        @apply text-gray-400 text-base font-medium;
     }
-    .heading-main{
+
+    .heading-main {
         @apply text-white text-5xl font-semibold;
     }
-    .paragraph{
+
+    .paragraph {
         @apply text-white text-base leading-[24px];
     }
-    .heading-question{
+
+    .heading-question {
         @apply text-[#383838] font-medium text-xl;
+    }
+
+    .display-none{
+        @apply hidden;
+    }
+
+    #theme-switch{
+        @apply h-[50px] w-[50px] p-0 rounded-full bg-[#9ca3af] justify-center items-center flex;
     }
 }
