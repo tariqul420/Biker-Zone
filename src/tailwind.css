@@ -16,9 +16,6 @@
     border-radius: 5rem;
 }
 
-/* #theme-switch svg:last-child{
-    display: none;
-} */
 
 @layer base {
     html {
@@ -52,6 +49,6 @@
     }
 
     #theme-switch{
-        @apply h-[50px] w-[50px] p-0 rounded-full bg-[#9ca3af] justify-center items-center flex;
+        @apply h-[50px] w-[50px] p-0 rounded-full border-solid border-2 border-[#9ca3af] justify-center items-center flex;
     }
 }
